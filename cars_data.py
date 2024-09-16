@@ -219,7 +219,7 @@ def sync_data():
 def update_mysql():
     data = request.json
     sheet_name = data['sheetName']
-    updates = data['updates']
+    updates = data['updates'] #fetches the updates on the rows and columns made in the Google sheet
 
     connection = get_db_connection()
 
