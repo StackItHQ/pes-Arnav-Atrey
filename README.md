@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/dd5c6a1e-8221-4c70-a39c-90d8cdf2f464
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/AHFn7Vbn)
 # Superjoin Hiring Assignment
 
@@ -46,7 +50,7 @@ Once you're done, make sure you **record a video** showing your project working.
 We have a checklist at the bottom of this README file, which you should update as your progress with your assignment. It will help us evaluate your project.
 
 - [ ] My code's working just fine! 🥳
-- [ ] I have recorded a video showing it working and embedded it in the README ▶️
+- [x] I have recorded a video showing it working and embedded it in the README ▶️
 - [ ] I have tested all the normal working cases 😎
 - [ ] I have even solved some edge cases (brownie points) 💪
 - [x] I added my very planned-out approach to the problem at the end of this README 📜
