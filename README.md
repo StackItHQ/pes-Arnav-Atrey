@@ -67,10 +67,10 @@ All the best ✨.
 
 My very planned out approach:
 
-[ * ]Data from the Google Sheets is pulled and formatted to be inserted into the MySQL database. The code monitors for changes in Google Sheets at regular intervals (10 seconds) and applies those changes to the database. Google Sheets data is retrieved in list format and converted into a structure that fits the MySQL schema (tuples for database insertion).
+Data from the Google Sheets is pulled and formatted to be inserted into the MySQL database. The code monitors for changes in Google Sheets at regular intervals (10 seconds) and applies those changes to the database. Google Sheets data is retrieved in list format and converted into a structure that fits the MySQL schema (tuples for database insertion).
 
-[ * ]A while loop is used to ensure that the system runs continuously until the user stops it manually (e.g., via a keyboard interrupt). Every iteration checks both data sources (Google Sheets and MySQL), performs updates if necessary, and then pauses for 10 seconds.
+A while loop is used to ensure that the system runs continuously until the user stops it manually (e.g., via a keyboard interrupt). Every iteration checks both data sources (Google Sheets and MySQL), performs updates if necessary, and then pauses for 10 seconds.
 
-[ * ]A Flask API is provided to allow external systems to update the MySQL database directly through a POST request. This expands the functionality, enabling clients to interact with the database beyond Google Sheets. The sync process runs in one thread, while the Flask server (for external updates) runs in another thread. This ensures the synchronization service and the web API can operate independently but concurrently.
+A Flask API is provided to allow external systems to update the MySQL database directly through a POST request. This expands the functionality, enabling clients to interact with the database beyond Google Sheets. The sync process runs in one thread, while the Flask server (for external updates) runs in another thread. This ensures the synchronization service and the web API can operate independently but concurrently.
 
 The main objective was to achieve real time integration. I considered a batch program through which I could have accomplished a 2 way update, but it wouldn't have achieved the main goal you had set for us - REAL-TIME. Unfortunately, I could code only today (Monday), as I had other commitments till yesterday. Maybe, one more day and I could have completed the 2-way update through API.
